@@ -37,20 +37,11 @@ namespace AsymCryptoLab2
         {
             return (a * b) / GCD(a, b);
         }
-        public static bool CheckStrongPrime(BigInteger n, BigInteger x)
+        public static bool CheckStrongPrime(BigInteger n, BigInteger x, BigInteger d, int s)
         {
             if (x >= n || x <= 1) throw new Exception("Bad x: its must be in range");
-            BigInteger s, t;
-            s = 0;
-            t = n - 1;
 
-            while (t % 2 == 0)
-            {
-                t >>= 1;
-                s++;
-            }
-
-            BigInteger y = BigInteger.ModPow(x, t, n);
+            BigInteger y = BigInteger.ModPow(x, d, n);
 
             if ((y == 1) || (y == n - 1))
             {
@@ -66,33 +57,6 @@ namespace AsymCryptoLab2
             return false;
 
         }
-        /*   public static BigInteger ModInverse(BigInteger a, BigInteger m)
-           {
-               BigInteger m0 = m;
-               BigInteger y = 0;
-               BigInteger x = 1;
-
-               if (m == 1)
-               {
-                   return 0;
-               }
-
-               while (a > 1)
-               {
-                   BigInteger q = BigInteger.DivRem(a, m, out BigInteger t);
-                   (a, m) = (m, a);
-                   (x, y) = (y, BigInteger.Subtract(x, BigInteger.Multiply(q, y)));
-               }
-
-               if (x < 0)
-               {
-                   x = BigInteger.Add(x, m0);
-               }
-
-               Console.WriteLine(x);
-               return x;
-
-           }*/
 
         public static BigInteger ExtendedGCD(BigInteger x, BigInteger n, out BigInteger xReverse)
         {

@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsymCryptoLab2", "AsymCryptoLab2\AsymCryptoLab2.csproj", "{117FA104-875F-4E5D-985D-426F5F374648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsymCryptoLab2", "AsymCryptoLab2\AsymCryptoLab2.csproj", "{117FA104-875F-4E5D-985D-426F5F374648}"
+	ProjectSection(ProjectDependencies) = postProject
+		{246D2E8B-1082-4F1F-A909-182B43B25AFB} = {246D2E8B-1082-4F1F-A909-182B43B25AFB}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoGenerators", "..\AsymCryptoLab1\CryptoGenerators\CryptoGenerators.csproj", "{246D2E8B-1082-4F1F-A909-182B43B25AFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitWizzardy", "..\AsymCryptoLab1\BitWizzardy\BitWizzardy.csproj", "{6F28AE18-9534-4623-95FD-9ED6FDECBC07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,14 @@ Global
 		{117FA104-875F-4E5D-985D-426F5F374648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{117FA104-875F-4E5D-985D-426F5F374648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{117FA104-875F-4E5D-985D-426F5F374648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246D2E8B-1082-4F1F-A909-182B43B25AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246D2E8B-1082-4F1F-A909-182B43B25AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246D2E8B-1082-4F1F-A909-182B43B25AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246D2E8B-1082-4F1F-A909-182B43B25AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F28AE18-9534-4623-95FD-9ED6FDECBC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F28AE18-9534-4623-95FD-9ED6FDECBC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F28AE18-9534-4623-95FD-9ED6FDECBC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F28AE18-9534-4623-95FD-9ED6FDECBC07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
